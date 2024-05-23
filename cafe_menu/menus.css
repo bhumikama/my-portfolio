@@ -1,0 +1,244 @@
+html {
+  height: 100%;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+nav {
+  margin-bottom: 2rem;
+  background-color: peru;
+  justify-content: space-between;
+  padding: 5px;
+  
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-items {
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-items img {
+  width: 30px;
+  height: 30px;
+}
+
+#languageButton {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #fdbb4e;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+#languageButton:hover {
+  background-color: #ffa630;
+}
+main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.established {
+  font-style: italic;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: Impact, serif;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item,
+.price {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 1.5rem 1rem;
+  background-color: peru;
+  flex-shrink:0;
+  margin-top: 2rem;
+}
+
+footer .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container-items {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-col {
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col h4 {
+  color: black;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+
+.al li {
+  text-align: center;
+  list-style-type: none;
+  padding: 4px 10px;
+  margin: 0 auto;
+ /* position: relative;*/
+}
+
+/*.al li::before {
+  content: "";*/
+  /*position: absolute;
+  transform: translate(-50%, -50%);*/
+  /*left: 50%;*/
+  /*top: 100%;*/
+  /*width: 0;*/
+  /*height: 1px;*/
+  /*transition-duration: 0.5s;
+}*/
+
+/*.footer-col:last-child {
+  
+  margin: 0;
+  padding: 0;
+}*/
+
+.footer-col ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-col ul li a:hover {
+  color: brown;
+}
+
+.footer-col .google-map {
+  max-width: 125px;
+  max-height: 125px;
+}
+
+.footer-col .google-map iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  left: 0;
+  top: 0;
+}
+footer .container .container-items .footer-col .footer-bottom {
+  margin-top: 10px;
+}
+
+footer .container .container-items .footer-col .list {
+  font-size: 0.65rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 780px) {
+  .container-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-col .google-map {
+    height: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .footer-col .google-map {
+    height: 200px; /*  fixed height for Safari */
+  }
+}

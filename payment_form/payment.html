@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pay.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <title>Payment Title</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Order Summary</h1>
+      <div class="items">
+        <span><strong>Total</strong></span>
+        <span> $333 / month </span>
+      </div>
+      <hr class="line-break" />
+      <div class="items">
+        <span>Total</span>
+        <span>$100</span>
+      </div>
+    </div>
+
+  </header>
+
+  <form class="payment-form">
+    <div class="common">
+      <h3 class="payment-title">Payment Method</h2>
+        <div class="payment-card box">
+
+          <label for="debit-credit" class="card-label">
+
+            <input type="radio" id="debit-credit" value="cards" name="payment-method" />
+            <div class="card">
+              <img src="cards.png" alt="card picture">
+              <p class="txt-center">Crebit / Dredit</p>
+            </div>
+          </label>
+
+          <label for="paypal" class="card-label">
+
+            <input type="radio" id="paypal" value="pp" name="payment-method">
+            <div class="card">
+              <img src="rectangle_RIGHT.png" alt="paypal image">
+              <p class="txt-center">PayPal</p>
+            </div>
+          </label>
+        </div>
+    </div>
+
+    <div class="common">
+      <h3 class="payment-title">Card Info</h2>
+        <div class="payment-card-1 box">
+
+          <div class="card-info number-flex">
+            <label for="card-number">Card Number</label>
+            <div>
+              <input type="number" name="card-number" id="card-number" placeholder="1234 1234 1234 1234" required /><i class="fa fa-question-circle"></i>
+            </div>
+          </div>
+
+          <div class="card-info date-flex">
+            <label for="datemax">Expiry Date</label>
+            <input type="text" id="datemax" placeholder="MM / YY" required />
+          </div>
+
+          <div class="card-info cvv-flex">
+            <label for="cvv-number">CVV</label>
+            <div>
+              <input type="number" id="cvv-number" name="cvv-number" placeholder="cvv" /><i class="fa fa-question-circle"></i>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="btn-flex">
+      <button id="buy-btn" type="submit" value="buy-now">Buy Now</button>
+      <p>Need help?</p>
+    </div>
+  </form>
+</body>
+
+</html>
